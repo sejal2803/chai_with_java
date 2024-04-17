@@ -32,3 +32,29 @@ const myFunction = function(){
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof myFunction);
+
+
+//++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitive type) - here we get copy 
+// Heap (non-primitive type) - here we get reference of original value
+
+let myName = "sejaljain"
+let anotherName = myName
+anotherName = "chaiorcode"
+
+console.log(myName)
+
+console.log(anotherName)
+
+let userOne = {
+    email: "sejaljain@gmail.com",
+    name: "sejal"
+}
+
+let userTwo = userOne
+
+userTwo.email = "sejal@gmail.com"
+
+console.log(userOne)
+console.log(userTwo)
