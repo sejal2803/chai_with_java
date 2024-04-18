@@ -87,3 +87,19 @@ console.log(Object.values(instaUser));
 console.log(Object.entries(instaUser));
 console.log(instaUser.hasOwnProperty("isLoggedIn"));
 
+
+
+console.log("*********************object destructuring************************");
+
+
+const course = {
+    courseName: "javascript",
+    courseFee: 3456,
+    courseTeacher: "sejal"
+}
+
+const {courseFee} = course
+console.log(courseFee);
+
+const {courseFee: Fee} = course
+console.log(Fee);
