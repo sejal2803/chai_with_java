@@ -20,3 +20,37 @@ console.log(this);
 //Arrow function..
 
 
+function oneForArrow(){
+    let userNAme = "sejal"
+    console.log(this.userNAme);        // cannot use this keyword inside function , it can use in objects.
+}
+
+oneForArrow()
+
+const oneArrow = function(){
+    let userNAme = "sejal"
+    console.log(this.userNAme);  
+}
+
+oneArrow()
+
+const oneArrowfun = () => {
+    let userNAme = "sejal"
+    console.log(this);  
+}
+
+oneArrowfun()
+
+const addTwo = (num1, num2) => {
+     return num1+num2
+}
+
+console.log(addTwo(18 , 2));
+
+
+const addThree = (num1, num2) =>  num1+num2
+
+console.log(addThree(1,6));
+
+const addFour = (num1, num2) => ( num1+num2 )
+console.log(addFour(4, 7));
